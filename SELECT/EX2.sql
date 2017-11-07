@@ -45,11 +45,6 @@ VALUES
 /*1*/ SELECT * FROM octocats;
 /*2*/ SELECT firstname FROM octocats;
 /*3*/ SELECT firstname, lastname, age FROM octocats;
-/*4*/ SELECT haut > 27  FROM Météo;
-/*5*/ SELECT bas <= 15 FROM Météo;
-/*6*/ SELECT bas = 15 FROM Météo;
-/*7*/ SELECT bas <> 15 FROM Météo;
-/*8*/ SELECT ville LIKE 'Br%' FROM Météo;
-/*9*/ SELECT haut BETWEEN 26 AND 28 FROM Météo;
-/*10*/ SELECT bas BETWEEN 14 AND 16 FROM Météo;
-/*11*/ SELECT haut >= 26 AND bas < 14 FROM Météo;
+/*4*/ SELECT lastname LIKE 'N%'  FROM octocats;
+/*5*/ SELECT firstname, lastname FROM octocats WHERE promo = 'promo1-central';
+/*6*/ SELECT firstname, lastname, birthdate FROM octocats WHERE promo = 'promo1-anderlecht';
